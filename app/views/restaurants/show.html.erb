@@ -1,4 +1,7 @@
 <h1><%= @restaurant.name %></h1>
+
+<div class="btn btn-default"><%= link_to '+ Review the restaurant', new_restaurant_review_path(@restaurant) %></div>
+
   <div class="card my-3">
     <div class="card-body">
       <p class="card-text">Category: <strong><%= @restaurant.category %></strong></p>
