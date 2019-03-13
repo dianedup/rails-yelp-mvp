@@ -1,0 +1,13 @@
+<h1>All the restaurants in your area</h1>
+
+<%  @restaurants.each do |restaurant| %>
+  <div class="card my-3">
+    <div class="card-header">
+      <h5><%= restaurant.name %></h5>
+    </div>
+    <div class="card-body">
+      <p class="card-text">Category: <strong><%= restaurant.category %></strong></p>
+      <a href="#" class="btn btn-primary">See details</a>
+    </div>
+  </div>
+<% end %>
