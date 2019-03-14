@@ -1,6 +1,6 @@
 <h1>All the restaurants in your area</h1>
 
-<%= link_to '+ Add a new restaurant', new_restaurant_path %>
+<%= link_to '+ Add a new restaurant', new_restaurant_path, class: "btn btn-warning" %>
 
 <%  @restaurants.each do |restaurant| %>
   <div class="card my-3">
@@ -9,7 +9,7 @@
     </div>
     <div class="card-body">
       <p class="card-text">Category: <strong><%= restaurant.category %></strong></p>
-      <div class="btn btn-warning"><%= link_to 'See details', restaurant_path(restaurant) %></div>
+      <%= link_to 'See details', restaurant_path(restaurant), class: 'btn btn-info' %>
     </div>
   </div>
 <% end %>
